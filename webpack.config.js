@@ -7,28 +7,6 @@ const devMode = mode === "development";
 const target = devMode ? "web" : "browserslist";
 const devtool = devMode ? "source-map" : undefined;
 
-// const appConfig = {
-//   entry: {
-//     background: "./src/browser/chrome/background/index.js",
-//     panel: "./src/browser/chrome/panel/index.js",
-//     popup: "./src/browser/chrome/popup/index.js",
-//     devtools: "./src/browser/chrome/devtools/index.js",
-//   },
-//   port: 3002,
-//   entries: {
-//     background: {
-//       title: "background",
-//       template: "./src/browser/chrome/background/index.html",
-//       chunks: ["background", "vendors"],
-//     },
-//     popup: {
-//       title: "background",
-//       template: "./src/browser/chrome/popup/index.html",
-//       chunks: ["popup", "vendors"],
-//     },
-//   },
-// };
-
 module.exports = {
   mode,
   target,
